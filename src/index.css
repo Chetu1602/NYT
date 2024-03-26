@@ -1,0 +1,516 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+font-family: nyt-frankil,;
+}
+
+.header{
+    margin: auto;
+    /* padding: 0 3%; */
+    max-width: 1200px;
+}
+.fontOfHeader{
+    margin-top:2px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 10px;
+    /* font-weight: 500; */
+    color: #000;
+    padding: 7px 8px 6px;
+}
+/* .fontSize{
+    font-size: 8px;
+} */
+.fontOfHeader:hover{
+    cursor: pointer;
+}
+.searchInput{
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(120, 120, 120);
+    border-radius: 3px;
+    margin-right: 4px;
+    padding: 0px 40px 0px 0px;
+    width: auto;
+    height: 31px;
+    padding: 1px 10px 0px;
+    color: rgb(102, 102, 102);
+    font-weight: 100;
+    letter-spacing:0.5px;
+
+
+}
+.Gobutton{
+    background-color: rgb(86, 123, 149);
+    border: 1px solid rgb(50, 104, 145);
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+
+}
+.Gobutton:hover{
+    background-color: rgb(50, 104, 145);
+    opacity: 0.5;
+    transition: all 0.6s ease 0s;
+
+}
+.dateFont{
+    font-size: 12px;
+}
+.today:hover{
+    cursor: pointer;
+    transition: color 0.6s ease;
+    color: #121212;
+}
+.rightButton{
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: rgb(86, 123, 149);
+    border: 1px solid rgb(50, 104, 145);
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 8px 7px;
+    color: rgb(255, 255, 255);
+    margin-right: 7px;
+}
+.rightButton:hover{
+    transition: all 0.6s ease 0s;
+    border: 1px solid rgb(50, 104, 145);
+    background-color:rgb(50, 104, 145) ;
+}
+.horizontalLine div h1,.horizontalLine  h1{
+    color: hsla(0, 0%, 7.06%, 1);
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    padding: 5px 12px;
+    /* margin-top: 14px; */
+}
+.hoverLine h1 {
+    position: relative; /* Set position to relative */
+  }
+  .hoverLine h1 span{
+    border-bottom: 3px solid transparent; /* Add transparent border to reserve space */
+
+  }
+  
+  .horizontalLine h1:hover span {
+    border-bottom-color: #000; /* Change the border color on hover */
+  }
+  
+
+.horizontalLine div img{
+    margin-left: -9px;
+    margin-right: 8px;
+}
+.downArrow{
+    height:10px;
+    width:12px;
+    
+}
+.divider{
+    color: #e2e2e2!important;
+}
+
+.doubleBorder::after{
+    content: ''; 
+  border-bottom: 1px solid #000; 
+  display: block;
+
+}
+.navSection ul .liveColor {
+    margin-top: 18px;
+    margin-right: 23px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 9.25px;
+    line-height: 1.25em;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+    white-space: nowrap;
+}
+.liveColor{
+    
+    margin-left: 300px;
+    color: #d0021b;
+}
+.hoverText{
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    line-height: 1.2em;
+    margin-top: 18px;
+    margin-right: 20px;
+    font-weight: 700;
+    font-size: 11px;
+
+    letter-spacing:0.5px ;
+}
+.hoverText:hover{
+    color: #5A5A5A;
+    cursor: pointer;
+}
+.color{
+    font-weight: 400;
+    margin-left: 5px;
+    margin-right: 11px;
+        position: relative;
+    color:#d0021b ;
+}
+
+.content{
+    margin: auto;
+    max-width: 1200px;
+}
+.contentStyle{
+    padding-left: 0px;
+    padding-top: 16px;
+}
+.contentStyle h1{
+    
+    font-size: 1.35em;
+    line-height: 1.15em;
+    font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
+    color: var(--color-content-primary, #121212);
+    font-weight: 700;
+}
+
+.sideBarContainer {
+    position: relative;
+  }
+  
+  .sideBarContainer::before {
+    margin-left: 6px;
+    top: 16px;
+    content: '';
+    height: 100%;
+    position: absolute;
+    left: 1px;
+    bottom: 0px;
+    border-left: 1px solid #C7C7C7;
+  }
+  
+  .sideBarImg{
+    margin-left: 12px;
+    margin-top: 5px;
+  }
+  .sideBarFont{
+    font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+    font-size: 1.5rem;
+    line-height: 1.15em;
+    font-weight: 300;
+    margin-left: 12px;
+
+  }
+  .sideBarDes{
+    color:  #5A5A5A;
+    font-size: 0.875rem;
+    -webkit-letter-spacing: 0.1px;
+    -moz-letter-spacing: 0.1px;
+    -ms-letter-spacing: 0.1px;
+    letter-spacing: 0.1px;
+    line-height: 1.1875rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-top: 0.5rem;
+    -webkit-font-smoothing: auto;
+    font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+    margin-left: 12px;
+
+  }
+  .horizontalLine{
+    height:50%
+  }
+  .homeContainer {
+    position: relative;
+  }
+  
+  .borderBottom {
+    margin-top: 2.75rem;
+
+    border-bottom: 1px solid #121212;
+    margin-bottom: 1.25rem;
+  }
+  
+  .hr {
+  margin: auto;
+  max-width: 1200px;
+  margin-bottom: 2px;
+  border-top: 3.75px double #000;
+}
+.newsMargin{
+    margin-top:50px;
+}
+.textMargin{
+    margin: auto;
+  max-width: 1200px;
+}
+.newsProperties h1{
+    margin-top: 2.5rem;
+    font-size: 0.8125rem;
+    line-height: 1.375rem;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+.imgStyle{
+    width: 215px;
+    height: 143.51 px;
+}
+.imgTitleStyle{
+    letter-spacing: 0.2px;
+    margin-top: 8px;
+    transition: color 0.6s ease 0s;
+    color: rgb(18, 18, 18);
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-family: nyt-cheltenham-small;
+    margin-bottom: 5px;
+    font-weight: 200;
+}
+
+    .hrLine {
+        padding: 0.5px;
+        margin: auto;
+  max-width: 1200px;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 1px solid rgb(226, 226, 226);
+        border-top: 2px solid rgb(226, 226, 226);
+        content: "";
+        display: block;
+        height: 1px;
+        margin-top: 0px;
+      }
+
+      .footerTitle{
+        color: rgb(51, 51, 51);
+    font-size: 12px;
+    font-weight: 700;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    height: 25px;
+    line-height: 15px;
+    margin: 0px;
+    text-transform: uppercase;
+    width: 150px;
+      }
+      .footerText{
+        color: rgb(0, 0, 0);
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    width: 150px;
+    font-size: 13px;
+    font-weight: 500;
+    height: 23px;
+    line-height: 16px;
+      }
+      .footerCol p{
+        margin-bottom: 2px;
+    }
+    .footerSide {
+        position: relative;
+        left: 63rem;
+        top: -25rem; 
+        
+        height: 24.5rem;
+        
+        border-left: 1px solid rgb(226, 226, 226);
+    padding-left: 15px;
+    padding-top: 0px;
+
+    }
+    .borderbottom{
+        margin: 2px auto;
+        max-width: 1200px ;
+        /* margin: 2px 0px 0px; */
+        padding: 10px 0px 0px;
+        border-top: 1px solid rgb(226, 226, 226);
+        
+    }
+    /* .footerSideContent{
+        display: inline-block;
+        position: relative;
+        left: 63rem;
+        top: -25rem;  
+    } */
+    .footerSideBar{
+        margin-top:-15px;
+        color: rgb(51, 51, 51);
+    font-size: 13px;
+    font-weight: 700;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    height: 25px;
+    line-height: 15px;
+    text-transform: uppercase;
+    width: 150px;
+        margin-bottom: 5px;
+    }
+    .footerSide div img{
+        height: 13px;
+        width: 13px;
+    }
+    .footerSideBarText{
+        margin-left:5px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 10px;
+        height: 25px;
+        display: inline-block;
+    }
+    
+    .descriptionSideBar{
+        color: rgb(0, 0, 0);
+    display: inline-block;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 150px;
+    font-size: 11px;
+    font-weight: 500;
+    height: 23px;
+    line-height: 21px;
+    }
+    .bottomSidebar{
+        position: relative;
+        top:3rem;
+        left: -32rem;
+    }
+    .footerEnd h1{
+        font-size: 11px;
+padding-top: 9px;
+        max-width: 1200px;
+        /* margin: 0px 0px 35px; */
+
+        color: #666;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    white-space: nowrap;
+
+    }
+    .footerHeight{
+        height: 28rem;
+    }
+    .navbarDetails{
+        padding: 4px 15px 7px;
+        position: relative;
+    border-bottom: 1px solid #e2e2e2;
+    }
+    .rightButtonDetails{ 
+        height: 1.75rem;
+
+        border-radius: 3px;
+    cursor: pointer;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: rgb(86, 123, 149);
+    border: 1px solid rgb(50, 104, 145);
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    color: rgb(255, 255, 255);
+    margin-right: 7px;
+    }
+    .rightButtonDetails:hover{
+        transition: all 0.6s ease 0s;
+        border: 1px solid rgb(50, 104, 145);
+        background-color:rgb(50, 104, 145) ;
+    }
+    
+.logoDeatils{
+    padding-left:10px;
+    padding-top: 15px;
+}
+.headerBorder{
+    border-left:1px solid rgb(226, 226, 226);
+    padding-left:  15px ;
+        position: relative;
+
+}
+.headerFirstChild{
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 0.9375rem;
+}
+.headerFont{
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+   
+    flex-shrink: 0;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color:#121212
+}
+.headerBorderBottom{
+    border-bottom:1px solid rgb(226, 226, 226);
+        position: relative;
+        padding-bottom: 17px;
+
+}
+.titleDetail{
+    max-width: 600px;
+    margin-left: 12rem;
+    margin-right: 9rem;
+}
+.descriptionDeatil{
+    font-family: nyt-imperial, georgia, 'times new roman', times, serif;
+}
+.buttonsStyle,.updates{
+    max-width: 600px;
+    margin-left: 12rem;
+    margin-right: 9rem;
+}
+.borderButton{
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 30px;
+    margin-right: 12px;
+}
+.borderButtonShare{
+    padding: 6px 10px 6px;
+}
+.borderButtonShare:hover,.shareButton:hover,.bookmarkButton:hover{
+    background: hsla(0, 0%, 87.46%, 1);
+    border-radius: 30px;
+    transition: all 0.6s ease 0s;
+
+}
+.textShare{
+    font-size: 0.75rem;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+.shareButton{
+    display: inline-block;
+    width: 36px;
+    border-radius: 100%;
+    padding: 6px;
+    overflow: initial;
+    vertical-align: middle;
+    height: 36px;
+}
+  .bookmarkButton{
+    display: inline-block;
+    width: 36px;
+    border-radius: 100%;
+    padding: 6px;
+    overflow: initial;
+    vertical-align: middle;
+    height: 36px;
+  }
+  .updates{
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+
+    font-size: 0.8125rem;
+    font-weight: 500;
+  }
+  .updates p{
+    padding-right: 1em;
+
+  }
+  
